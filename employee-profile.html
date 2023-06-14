@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #fff5e6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <div class="container-fluid main-head bg-dark">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <img src="/img/companylogo.png" height="70px" alt="logo">
+                <h1 class="text-light mx-2">Beangate</h1>
+            </div>
+            <div class="col-5 d-flex justify-content-around align-items-center ">
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="input-group mb-3 d-flex justify-content-center align-items-center">
+                        <span class="input-group-text rounded-circle border-2 mx-2" style="background-color: #f06d03;"
+                            id="basic-addon1">
+                            <i class="bi bi-search text-light "></i></span>
+                        <input type="text" class="form-control rounded-pill " placeholder="Search....."
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-bell-fill text-light" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+
+                </div>
+
+                <div class="profile-pic">
+                    <img src="img/profile-pic.jpg" alt="pic" class="p-pic">
+                </div>
+                <div class="profile-name text-white  d-flex justify-content-center align-items-start flex-column">
+                    <span>Sachin Pawar</span>
+                    <span style="font-size:xx-small;" class="mt-0">UI/UX Designer</span>
+                </div>
+                <button type="button" class="btn btn-sm btn-dark dropdown-toggle-split" data-bs-toggle="dropdown"
+                    aria-expanded="true"><i class="bi bi-three-dots"></i>
+                </button>
+                <ul class="dropdown-menu p-2 mt-3">
+                    <li>Log Out</li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- header end  -->
+
+    <div class=" container-fluid hero">
+        <div class="side-menu-bar ">
+
+            <nav class="main-menu ">
+
+                <div class="scrollbar" id="style-1">
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html">
+                                <i class="bi bi-columns-gap mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-person-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Management</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+
+                                <i class="bi bi-person-circle mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Clients</span>
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="active">
+
+                            <a href="employees.html">
+                                <i class="bi bi-people-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Employee</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <i class="fa fa-graduation-cap mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Students</span>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                <i class="bi bi-currency-rupee mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Revenue</span>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                <i class="bi bi-calendar2-date-fill mx-2" style="font-size: 2rem;"></i>
+                                <span class="nav-text">Calender</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="dashboard-main-box mx-5  d-flex justify-content-start flex-column">
+            <section>
+                <div class="top-sticky">
+                    <div class="paraent-div">
+                        <div class="user-details d-flex justify-content-between align-items-center bg-white">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="user-pic m-3">
+                                    <img src="img/dp-pic.jpg" class="rounded-circle" alt="Profile picture" width="120px"
+                                        height="120px">
+                                </div>
+                                <div class="user-name m-3">
+                                    <h4 class="name">Satyam Krishna<span
+                                            class="badge rounded-pill bg-success text-wihte m-1">active</span></h4>
+
+                                    <p class="emp-id">Employee ID: #120</p>
+                                </div>
+                                <div class="user m-3">
+                                    <p class="designation"><i class="fa-solid fa-suitcase px-2"></i>Desination:<span> Angular
+                                            Devloper</span>
+                                    </p>
+                                    <p class="login-time"><i class="fa-regular fa-clock px-2"></i>Last Login:<span> 3Min.
+                                            ago</span>
+                                    </p>
+                                <!-- </div>
+                                <div> -->
+
+                                    <ul class="wrapper">
+                                        <li class="icon facebook">
+                                            <span class="tooltip">Facebook</span>
+                                            <span><i class="fab fa-facebook-f"></i></span>
+                                        </li>
+                                        <li class="icon twitter">
+                                            <span class="tooltip">Twitter</span>
+                                            <span><i class="fab fa-twitter"></i></span>
+                                        </li>
+                                        <li class="icon instagram">
+                                            <span class="tooltip">Instagram</span>
+                                            <span><i class="fab fa-instagram"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="button-click m-3">
+                                <button type="submit" class="mssg" title="Message"><i
+                                        class="fa-solid fa-comment-dots p-2"></i></button>
+                                <button type="submit" class="edit" title="Edit Profile"><i
+                                        class="fa-solid fa-pen p-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="navigation d-flex justify-content-start align-items-center mt-0 mb-4 bg-secondary">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#project-page-id">Projects</a></li>
+                                <li><a href="#document">Document</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid-profile d-flex justify-content-between align-items-start">
+
+                    <div class="personal-information p-3 bg-white">
+                        <h5>Personal Information</h5>
+                        <hr>
+                        <p class="dob"><i class="fa-solid fa-cake-candles p-2"></i>Date-of-birth</p>
+                        <p class="date">June 5, 2001</p>
+                        <hr>
+                        <p class="gen"><i class="fa-solid fa-mars-and-venus p-2"></i>Gender</p>
+                        <p class="m-f">Male</p>
+                        <hr>
+                        <p class="contact-number"><i class="fa-solid fa-phone p-2"></i>Contact Number</p>
+                        <p class="number">458-658-3892</p>
+                        <hr>
+                        <p class="email-add"><i class="fa-solid fa-envelope p-2"></i>Email Id</p>
+                        <p class="id">jr56@gmail.com</p>
+                        <hr>
+                        <p class="permanent-location"><i class="fa-solid fa-location-dot p-2"></i></i>Permanent Location
+                        </p>
+                        <p class="location">Bhopal</p>
+                        <hr>
+                        <p class="comm-loc"><i class="fa-solid fa-location-dot p-2"></i></i>Communication Location</p>
+                        <p class="loc">Agra</p>
+                    </div>
+
+                    <div class="ussage-details p-3 bg-white">
+                        <h5>Ussage Details</h5>
+                        <hr>
+                        <p class="storage">Storage Used</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:50%"></div>
+                        </div>
+                        <p>5GB of 10GB used (50% of total storage used)</p>
+                        <hr>
+
+                        <p class="projects">Projects</p>
+                        <p class="project-lists"><i class="fa-brands fa-google p-2"></i>Google, <i
+                                class="fa-brands fa-windows p-2"></i>Microsoft, <i
+                                class="fa-brands fa-amazon p-2"></i>Amazon,
+                            <i class="fa-brands fa-aws p-2"></i>AWS
+                        </p>
+                        <hr>
+
+                        <div class="detailed-personal-info">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p><i class="fa-solid fa-building p-2"></i>Department</p>
+                                    <p class="dep">UI/UX</p>
+                                    <hr>
+
+                                    <p><i class="fa-regular fa-star-half-stroke p-2"></i>Role</p>
+                                    <p class="role">Frontent Devloper</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="team"><i class="fa-solid fa-people-group p-2"></i>Team</p>
+                                    <p class="product-name">Product UI/UX, Infince</p>
+                                    <hr>
+
+                                    <p class="reg-Date"><i class="fa-regular fa-calendar-days p-2"></i>Reg Date</p>
+                                    <p class="date">Aug 15, 2020</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="about-team"><i class="fa-regular fa-star-half-stroke p-2"></i>Teams</p>
+                            <p>Product UI/UX: Satyam Krishna(Team Leader), +3 more</p>
+                            <p>QA Team: Satyam Krishna(Team Leader), +3 more</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Projects List -->
+            <section>
+                <div class="project-page my-5 d-flex justify-content-between align-items-strt" id="project-page-id">
+                    <!-- 3 div -->
+                    <!-- skill: 2div -->
+                    <div class="project-list">
+                        <div class="project-info p-3 bg-white mr-5">
+                            <h5>Project List</h5>
+                            <hr>
+                            <div class="project-name d-flex justify-content-between align-items-center">
+                                <div>
+                                    <img src="img/google-logo.jpg" alt="Google" class="rounded-circle" width="40px"
+                                        height="40px">
+                                    <h4 class="google font-weight-bold d-inline">Google</h4>
+                                </div>
+                                <p>3 Months</p>
+                            </div>
+                            <p class="about-project">Google LLC is an American multinational technology company focusing
+                                on
+                                artificial intelligence, online advertising, search engine technology, cloud computing,
+                                computer software, quantum computing, e-commerce, and consumer electronics.</p>
+                            <p class="team-member font-italic">Team Members</p>
+                            <p class="team-member-name">
+                                <img src="img/team-member (1).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (2).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (3).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (4).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                            </p>
+                            <hr>
+                            <div class="project-name d-flex justify-content-between align-items-center">
+                                <div>
+                                    <img src="img/google-logo.jpg" alt="Google" class="rounded-circle" width="40px"
+                                        height="40px">
+                                    <h4 class="google font-weight-bold d-inline">Google</h4>
+                                </div>
+                                <p>3 Months</p>
+                            </div>
+                            <p class="about-project">Google LLC is an American multinational technology company focusing
+                                on
+                                artificial intelligence, online advertising, search engine technology, cloud computing,
+                                computer software, quantum computing, e-commerce, and consumer electronics.</p>
+                            <p class="team-member font-italic">Team Members</p>
+                            <p class="team-member-name">
+                                <img src="img/team-member (1).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (2).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (3).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (4).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                            </p>
+                            <hr>
+                            <div class="project-name d-flex justify-content-between align-items-center">
+                                <div>
+                                    <img src="img/google-logo.jpg" alt="Google" class="rounded-circle" width="40px"
+                                        height="40px">
+                                    <h4 class="google font-weight-bold d-inline">Google</h4>
+                                </div>
+                                <p>3 Months</p>
+                            </div>
+                            <p class="about-project">Google LLC is an American multinational technology company focusing
+                                on
+                                artificial intelligence, online advertising, search engine technology, cloud computing,
+                                computer software, quantum computing, e-commerce, and consumer electronics.</p>
+                            <p class="team-member font-italic">Team Members</p>
+                            <p class="team-member-name">
+                                <img src="img/team-member (1).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (2).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (3).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                                <img src="img/team-member (4).jpg" class="rounded-circle" alt="team-member" width="30px"
+                                    height="30px">
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-set p-3 bg-white">
+                            <h4>Skills</h4>
+                            <p>Frontent:
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                            </div>
+                            </p>
+                            <p>Backend:
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                            </div>
+                            </p>
+                            <p>Database:
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                            </div>
+                            </p>
+                            <p>Conectivity:
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 25%">25%</div>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="effi p-0 bg-white d-flex justify-content-between align-items-start mt-5">
+                            <!-- <h4>Employee Skills</h4> -->
+                            <div id="piechart" style="width: 500px; height: 400px;" class="pie-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Document Section -->
+
+            <section>
+                <div class="doc bg-white" id="document">
+                    <h4 class="p-3 m-2">Documents<i class="fa-solid fa-file-invoice p-2"></i></h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-address-card p-2"></i>Aadhar Card</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-address-card p-2"></i>Pan Card</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-sheet-plastic p-2"></i>10th Marksheet</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-sheet-plastic p-2"></i>12th Marksheet</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-sheet-plastic p-2"></i>Diploma Marksheet</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-between align-items-center p-4">
+                            <h5><i class="fa-solid fa-sheet-plastic p-2"></i>Graduation Marksheet</h5>
+                            <div class="u-d-button button-click">
+                                <button type="submit" class="upload" title="Upload"><i
+                                        class="fa-solid fa-upload p-2"></i></button>
+                                <a href="#" download=""><button type="submit" class="download" title="Download"><i
+                                            class="fa-solid fa-download p-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="all-doc d-flex justify-content-center align-items-center button-click">
+                        <a href="#" download=""><button type="submit" class="download" title="Download all Documents"><i
+                                    class="fa-solid fa-download p-2" style="width: 100px;"></i></button></a>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Frontend', 55],
+                ['Backend', 15],
+                ['Database', 5],
+                ['Connectivity', 5],
+            ]);
+
+            var options = {
+                title: ''
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+
+
+    <!-- font awesome icons link -->
+    <script src="https://kit.fontawesome.com/e9bca05841.js" crossorigin="anonymous"></script>
+
+    <!-- Chart script -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
